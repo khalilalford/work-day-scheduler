@@ -40,7 +40,7 @@ $(function () {
   // for loop that loops over each timeblock and runs our if/else statements
   for (var i = 9; i < 18; i++) {
     // inside the for loop - select the one time block we are focussing on 
-    // example: the 9AM time block will be first selected
+
     var timeBlockEl = $("#hour-" + i)
 
     var currentHour = parseInt(dayjs().format("HH"), 10);
@@ -49,7 +49,7 @@ $(function () {
     // if the current hour is greater than the time block - then the time block is in the past
     if (currentHour > i){
       timeBlockEl.addClass("past")
-      console.log("time block is in the past if timeBlockEl is adding a class ")
+      console.log("time block is in the past if timeBlockEl is adding a class")
     }
     
 
