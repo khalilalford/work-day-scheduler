@@ -73,20 +73,35 @@ $(function () {
   // manually do something nine times -- get item from local storage - create a var to use localStorage
   // highlight the key of what you wantt like a P.O box
   // retrieve things
-  var nineAm = localStorage.getItem("hour-9") //repeat this for each hour block
-  $("#hour-9").children(".description").append(nineAm) //repeat this for each hour block needs to be jquery
+  var nineAm = localStorage.getItem("hour-9") 
+  $("#hour-9").children(".description").append(nineAm) 
 
-  var tenAm = localStorage.getItem("") //repeat this for each hour block 
-  $("#10").val(tenAm) //repeat this for each hour block needs to be jquery
+  var tenAm = localStorage.getItem("hour-10") 
+  $("#hour-10").children(".description").append(tenAm) 
 
-  var elevenAm = localStorage.getItem("11") //repeat this for each hour block
-  $("#11").val(elevenAm) // repeat this for each hour block needs to be jquery
+  var elevenAm = localStorage.getItem("hour-11") 
+  $("#hour-11").children(".description").append(elevenAm) 
 
-  var twelvePm = localStorage.getItem("12")
-  $("#12").val()
+  var twelvePm = localStorage.getItem("hour-12")
+  $("#hour-12").children(".description").append(twelvePm)
 
+  var onePm = localStorage.getItem("hour-13")
+  $("#hour-13").children(".description").append(onePm)
+
+  var twoPm = localStorage.getItem("hour-14")
+  $("hour-14").children(".description").append(twoPm)
   
-  
+  var threePm = localStorage.getItem("hour-15")
+  $("hour-15").children(".description").append(threePm)
+
+  var fourPm = localStorage.getItem("hour-16")
+  $("hour-16").children(".description").append(fourPm)
+
+  var fivePm = localStorage.getItem("hour-17")
+  $("hour-17").children(".description").append(fivePm)
+
+
+
   var currentDate = dayjs().format("YYYY-MM-DD")
   // changed the element's text context
   // document.getElementById("currentDay").textContent=currentDate
