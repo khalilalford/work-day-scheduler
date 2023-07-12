@@ -85,11 +85,10 @@ $(function () {
   var twelvePm = localStorage.getItem("12")
   $("#12").val()
 
-  // TODO: Add code to display the current date in the header of the page.
-  // what is the current date use day.js
+  
+  
   var currentDate = dayjs().format("YYYY-MM-DD")
-  // select the element that we want to change 
-  // change the element's text context
+  // changed the element's text context
   // document.getElementById("currentDay").textContent=currentDate
   $("#currentDay").text(currentDate);
 
